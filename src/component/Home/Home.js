@@ -4,11 +4,11 @@ import Event from '../Event/Event';
 const Home = () => {
     const [images,setImages]=useState([])
     useEffect(()=>{
-        fetch('https://api.mocki.io/v1/ec7a9d41')
+        fetch('http://localhost:5055/events')
         .then(res=>res.json())
         .then(data=>setImages(data))
 
-    })
+    },[0])
     return (
         <div>
             <h1>hello</h1>
